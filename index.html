@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Metro de medellín | viaje con nosotros</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="all,follow">
+    <!-- Bootstrap CSS-->
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+    <!-- Owl carousel 2 -->
+    <link rel="stylesheet" href="vendor/owl.carousel2/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="vendor/owl.carousel2/assets/owl.theme.default.min.css">
+    <!-- Modal video-->
+    <link rel="stylesheet" href="vendor/modal-video/css/modal-video.min.css">
+    <!-- Leaflet-->
+    <link rel="stylesheet" href="vendor/leaflet/leaflet.css">
+    <!-- Google fonts-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,700&amp;font-display=swap">
+    <!-- theme stylesheet-->
+    <link rel="stylesheet" href="css/style.default.css" id="theme-stylesheet">
+    <!-- Custom stylesheet - for your changes-->
+    <link rel="stylesheet" href="css/custom.css">
+    <!-- Favicon-->
+    <link rel="shortcut icon" href="img/favicon.png">
+  </head>
+  <body>
+    <!-- NAVBAR-->
+    <header class="header fixed-top header-animated">
+      <nav class="navbar navbar-expand-lg navbar-light py-3">
+        <div class="container"><a class="navbar-brand" href="index.html"><img src="img/logo.jpg" alt="..." width="80"></a>
+          <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <!-- Link--><a class="nav-link active" href="index.html">Inicio</a>
+              </li>
+              <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Viaje con nosotros</a>
+                <div class="dropdown-menu mt-3" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="#">Tarifas</a>
+                  <a class="dropdown-item" href="#">Sistema Integrado</a>
+                  <a class="dropdown-item" href="#">Accesibilidad</a>
+                  <a class="dropdown-item" href="#">Horarios</a>
+                  <a class="dropdown-item" href="#">Programe su viaje</a>
+                  <a class="dropdown-item" href="#">Mapas</a>
+                  <a class="dropdown-item" href="#">Reglamento del usuario</a>
+                  <a class="dropdown-item" href="#">Guía turística</a>
+
+                </div>
+              </li>
+              <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Cultura M</a>
+                <div class="dropdown-menu mt-3" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="#">Relacionamiento con la comunidad</a>
+                  <a class="dropdown-item" href="#">Gestión educativa</a>
+                  <a class="dropdown-item" href="#">entorno cuidado</a>
+                  <a class="dropdown-item" href="#">Gestión social en proyectos</a>
+                  <a class="dropdown-item" href="#">Programas culturales</a>
+                  <a class="dropdown-item" href="#">Concurso de sketch teatrales metro 22 años</a>
+                  <a class="dropdown-item" href="#">Escuela de líderes metro</a>
+                  <a class="dropdown-item" href="#">Movilidad sostenible</a>
+                  <a class="dropdown-item" href="#">Juegos mundo metro</a>
+                  <a class="dropdown-item" href="#">Concurso jingle cultura metro 30 años</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Al día</a>
+                <div class="dropdown-menu mt-3" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="#">Noticias metro</a>
+                  <a class="dropdown-item" href="#">Descarga nuestra App</a>
+                  <a class="dropdown-item" href="#">Calendario eventos metro</a>
+                  <a class="dropdown-item" href="#">Periódico nuestro metro</a>
+                  <a class="dropdown-item" href="#">Periódico nuestro tranvía y sus dos cables</a>
+                  <a class="dropdown-item" href="#">Nuevos cables</a>
+                  <a class="dropdown-item" href="#">TV metro</a>
+                  <a class="dropdown-item" href="#">Estación metro</a>
+                  <a class="dropdown-item" href="#">Revistas metro y otras publicaciones</a>
+                  <a class="dropdown-item" href="#">Notificaciones judiciales</a>
+                  <a class="dropdown-item" href="#">Acuerdos conciliatorios</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Negocios M</a>
+                <div class="dropdown-menu mt-3" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="#">Consultorías metro</a>
+                  <a class="dropdown-item" href="#">Experiencia</a>
+                  <a class="dropdown-item" href="#">Publicidad metro</a>
+                  <a class="dropdown-item" href="#">Inmobiliaria metro</a>
+                  <a class="dropdown-item" href="#">Parqueadero de integración</a>
+                  <a class="dropdown-item" href="#">Recaudo clientes</a>
+                  <a class="dropdown-item" href="#">Reglamento del usuario</a>
+                  <a class="dropdown-item" href="#">Facturación electronica de ventas (Res. dian 042 de 2020)</a>
+
+                </div>
+              </li>
+              <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Nosotros</a>
+                <div class="dropdown-menu mt-3" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="#">Historia</a>
+                  <a class="dropdown-item" href="#">Informes corporativos</a>
+                  <a class="dropdown-item" href="#">Direccionamiento estrategico</a>
+                  <a class="dropdown-item" href="#">Buen gobierno</a>
+                  <a class="dropdown-item" href="#">Plan anticorrupción</a>
+                  <a class="dropdown-item" href="#">Transparencia</a>
+                  <a class="dropdown-item" href="#">Estructura</a>
+                  <a class="dropdown-item" href="#">Certificación</a>
+                  <a class="dropdown-item" href="#">Política</a>
+                  <a class="dropdown-item" href="#">Meci</a>
+                  <a class="dropdown-item" href="#">Reconocimientos</a>
+                  <a class="dropdown-item" href="#">Normatividad</a>
+                  <a class="dropdown-item" href="#">Trabaje con nosotros</a>
+                  <a class="dropdown-item" href="#">Plataforma de gobierno corporativo</a>
+                  <a class="dropdown-item" href="#">Gestión ambiental de la empresa</a>
+                </div>
+              </li>
+              <li class="nav-item">             
+                <button class="btn btn-success" type="button" data-target="#quoteForm" data-toggle="modal">Atención al Ciudadano</button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- GET a QUOTE MODAL -->
+    <div class="modal fade" id="quoteForm" tabindex="-1" role="dialog" aria-labelledby="quoteForm" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+        <div class="modal-content p-md-3">
+          <div class="modal-header">
+            <h4 class="modal-title">Request a <span class="text-success">quote</span></h4>
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+          </div>
+          <div class="modal-body">
+            <form action="#">
+              <div class="row">
+                <div class="form-group col-lg-6">
+                  <label class="font-weight-bold text-small" for="firstname">First name<span class="text-success ml-1">&#42;</span></label>
+                  <input class="form-control" id="firstname" type="text" placeholder="Enter your first name" required>
+                </div>
+                <div class="form-group col-lg-6">
+                  <label class="font-weight-bold text-small" for="lastname">Last name<span class="text-success ml-1">&#42;</span></label>
+                  <input class="form-control" id="lastname" type="text" placeholder="Enter your last name" required>
+                </div>
+                <div class="form-group col-lg-12">
+                  <label class="font-weight-bold text-small" for="email">Email address<span class="text-success ml-1">&#42;</span></label>
+                  <input class="form-control" id="email" type="email" placeholder="Enter your email address" required>
+                </div>
+                <div class="form-group col-lg-6">
+                  <label class="font-weight-bold text-small" for="phone">Phone number <small class="small text-gray">optional</small></label>
+                  <input class="form-control" id="phone" type="tel" placeholder="Enter your phone number">
+                </div>
+                <div class="form-group col-lg-6">
+                  <label class="font-weight-bold text-small" for="projecttype">Project type<span class="text-success ml-1">&#42;</span></label>
+                  <input class="form-control" id="projecttype" type="text" placeholder="Enter your project type" required>
+                </div>
+                <div class="form-group col-lg-6">
+                  <label class="font-weight-bold text-small" for="budget">Estimated budget<span class="text-success ml-1">&#42;</span></label>
+                  <input class="form-control" id="budget" type="text" placeholder="Enter your estimated budget" required><small class="form-text text-muted">Project budget will be on <span class="text-dark">$</span></small>
+                </div>
+                <div class="form-group col-lg-6">
+                  <label class="font-weight-bold text-small" for="timeframe">Time frame<span class="text-success ml-1">&#42;</span></label>
+                  <input class="form-control" id="timeframe" type="text" placeholder="Maximum time for the project" required>
+                </div>
+                <div class="form-group col-lg-12">
+                  <label class="font-weight-bold text-small" for="projectdetail">Project details<span class="text-success ml-1">&#42;</span></label>
+                  <textarea class="form-control" id="projectdetail" rows="5" placeholder="Provide a short brief about your project" required></textarea>
+                </div>
+                <div class="form-group col-lg-12">
+                  <button class="btn btn-success" type="submit">Submit your request</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- HERO SECTION-->
+    <section class="hero hero-home with-pattern d-flex align-items-center py-5">
+      <div class="container py-5 mt-5">
+        <div class="row align-items-center">
+          <div class="col-md-6 mb-5 mb-md-0">
+            <h1 class="mb-3">Metro de<span class="text-success"> Medellín </span>- Nos mueve la vida.</h1>
+            <p class="text-muted">El METRO da la bienvenida al Valle de Aburrá, al ofrecer la posibilidad de integrarse a un medio de transporte ágil, económico y seguro.</p>
+              <div class="media-body ml-3"><iframe width="560" height="315" src="https://www.youtube.com/embed/06-WIwU8xNQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div></a>
+          </div>
+          <div class="col-md-5 ml-auto">
+            <div class="img-gradient img-gradient-right"><img class="img-fluid shadow rounded" src="img/People.svg" alt=""></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="py-5">
+      <div class="container py-5">
+        <div class="row">
+          <div class="col-lg-6">
+            <h2>Todas las estaciones son accesibles</h2>
+            <br>
+            <div class="img-gradient img-gradient-left"><img class="img-fluid shadow rounded" src="img/Bus Stop-pana.svg" alt=""></div>
+          </div>
+          <div class="col-lg-6"> 
+            <p class="text-muted">
+              Movilidad sostenible es un concepto que abarca múltiples dimensiones del desarrollo del METRO. 
+              Una de ellas es la Gestión e inclusión social, con la cual se busca garantizar que las poblaciones menos favorecidas 
+              tengan acceso igualitario al servicio de transporte, promoviendo la equidad social. 
+              Además se brindan garantías de accesibilidad a personas con movilidad o comunicación reducida.
+            </p>
+            <br>
+            <p class="text-muted">
+              En materia de infraestructura, todas las estaciones son accesibles y cuentan, dependiendo de su arquitectura, con ascensores, plataformas mecánicas, escalas eléctricas y/o apoyos isquiáticos. De igual manera, las estaciones cuentan con teléfonos públicos bajos para personas de baja estatura.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="pb-5">
+      <div class="container pb-5">
+        <div class="row">
+          <div class="col-lg-4 mb-3 mb-lg-0">
+            <div class="media">
+              <div class="icon-block rounded-circle"><i class="fas fa-check"></i></div>
+              <div class="media-body ml-3">
+                <h5>Coordinador de calidad</h5>
+                <p class="text-small text-muted">Por 14 años consecutivos, elegidos como la empresa con mayor conocimiento, favorabilidad y gestión de Medellín, según la encuesta de percepción ciudadana del programa Medellín Cómo Vamos.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 mb-3 mb-lg-0">
+            <div class="media">
+              <div class="icon-block rounded-circle"><i class="fas fa-check"></i></div>
+              <div class="media-body ml-3">
+                <h5>Gestión de la financiación</h5>
+                <p class="text-small text-muted">Puesto 19 entre las 100 empresas con mejor reputación corporativa del país en 2019, de acuerdo con el estudio elaborado por el Monitor Empresarial de Reputación Corporativa (Merco). </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 mb-3 mb-lg-0">
+            <div class="media">
+              <div class="icon-block rounded-circle"><i class="fas fa-check"></i></div>
+              <div class="media-body ml-3">
+                <h5>Invertir en seguros</h5>
+                <p class="text-small text-muted">Premios TW Co en las categorías mejor servicio al cliente y mejor tweet - diciembre de 2019.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="pb-5">
+      <div class="container pb-5">
+        <div class="card shadow text-center map-bg">
+          <div class="card-body p-lg-5">
+            <div class="p-4">
+              <div class="row mb-5">
+                <div class="col-lg-7 mx-auto">
+                  <p class="h6 text-success text-uppercase">Propósito superior</p>
+                  <h2>Grupo de interés</h2>
+                  <p class="text-muted">Generamos calidad de vida para las personas e integramos y transformamos territorios, contribuyendo con la sostenibilidad de la región.</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-4 mb-3 mb-lg-0">
+                  <svg class="svg-icon text-success mb-4 svg-icon-big svg-icon-light">
+                    <use xlink:href="#quality-1"></use>
+                  </svg>
+                  <h5>Reconocimientos</h5>
+                  <p class="text-muted mb-0">Mención de honor por el proyecto Recarga Verde - Premio al Compromiso Ambiental, organizado por Anif, Banco de Occidente y Bancolombia.</p>
+                </div>
+                <div class="col-lg-4 mb-3 mb-lg-0">
+                  <svg class="svg-icon text-success mb-4 svg-icon-big svg-icon-light">
+                    <use xlink:href="#sales-up-1"> </use>
+                  </svg>
+                  <h5>Gestión de la financiación</h5>
+                  <p class="text-muted mb-0">Primera empresa pública del país en Innovación y servicio al cliente, séptimo lugar entre las empresas más responsables y una de las más admiradas y con mejor calidad en el servicio, según la encuesta Élite Empresarial de Datexco, 2013.</p>
+                </div>
+                <div class="col-lg-4">
+                  <svg class="svg-icon text-success mb-4 svg-icon-big svg-icon-light">
+                    <use xlink:href="#shield-security-1"> </use>
+                  </svg>
+                  <h5>Coordinador de calidad</h5>
+                  <p class="text-muted mb-0">La segunda marca más social del País y la primera del sector transporte. Además, segundo lugar en el País entre las marcas con más “energía”, por su comunicación, visión, diferenciación, innovación y dinamismo, según Goodbrand 2011.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="pb-5">
+      <div class="container pb-5">
+        <div class="row">
+          <div class="col-lg-5 mx-auto mb-5 mb-lg-0 d-flex flex-column">
+            <div class="numeric-block order-2 order-lg-1 mb-lg-5">
+              <div class="numeric-block-count">1</div>
+              <p class="text-muted text-uppercase mb-2">Reconocimientos</p>
+              <h3>Calificación AAA en 2019, entregada por Fitch Ratings.</h3>
+              <p class="text-muted py-3">Fitch Ratings-Bogota-19 July 2019: Fitch Ratings asignó la calificación 'AAA(col)' con Observación Negativa a la emisión internacional de bonos por USD1. 000 millones de Empresas Públicas de Medellín E.S:P. (EPM).</p><a class="btn btn-success" href="#">View details</a>
+            </div><img class="flex-grow-0 img-fluid shadow rounded order-1 order-lg-2 mb-5 mb-lg-0" src="img/people_3.jpg" alt="">
+          </div>
+          <div class="col-lg-5 mx-auto d-flex flex-column"><img class="flex-grow-0 img-fluid shadow rounded mb-5" src="img/cultura.jpg" alt="">
+            <div class="numeric-block">
+              <div class="numeric-block-count">2</div>
+              <p class="text-muted text-uppercase mb-2">Reconocimientos</p>
+              <h3>Premios TW Co en las categorías mejor servicio al cliente y mejor tweet - diciembre de 2019.</h3>
+              <p class="text-muted py-3">¡Estamos felices! Por segundo año consecutivo el Metro de Medellín logra el primer puesto en los Premios #LatamDigital 2020 en la categoría Mejor Campaña en Twitter, del pilar Social Media. El reconocimiento se obtuvo por la campaña #ChuloAzulPalMetro, con la que logramos la anhelada verificación de nuestra cuenta en esa red social.</p><a class="btn btn-success" href="#">Ver detalles</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="py-5 bg-success map-bg text-white">
+      <div class="container text-center py-5">
+        <div class="row mb-4">
+          <div class="col-lg-7 mx-auto">
+            <p class="h6 text-uppercase">Beneficios del sistema de gestión de la calidad</p>
+            <h2>Completamos cada proyecto con experiencia de la mano de</h2>
+            <p>Reafirmación del alto posicionamiento del servicio de transporte de la Empresa: calidad de vida para la comunidad y convivencia ciudadana..</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="card border-0 card-hover-bg">
+              <div class="card-body p-lg-5">
+                <svg class="svg-icon svg-icon-big svg-icon-light mb-4">
+                  <use xlink:href="#mental-health-1"> </use>
+                </svg>
+                <h4>Idea original</h4>
+                <p class="text-small mb-0">Estructura con la capacidad de responder a las circunstancias cambiantes del entorno, soportado en el enfoque por procesos y en el mejoramiento continuo.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card border-0 card-hover-bg">
+              <div class="card-body p-lg-5">
+                <svg class="svg-icon svg-icon-big svg-icon-light mb-4">
+                  <use xlink:href="#paper-stack-1"> </use>
+                </svg>
+                <h4>Calidad </h4>
+                <p class="text-small mb-0">Con un enfoque hacia el cliente busca la satisfacción de las necesidades de los clientes expresadas en términos de rapidez, seguridad, cobertura y economía..</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card border-0 card-hover-bg">
+              <div class="card-body p-lg-5">
+                <svg class="svg-icon svg-icon-big svg-icon-light mb-4">
+                  <use xlink:href="#design-1"> </use>
+                </svg>
+                <h4>Planeamiento </h4>
+                <p class="text-small mb-0">Enfoque de gestión de la calidad centrado en el compromiso con los resultados y en proveedores que suministren servicios y productos con calidad.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="bg-light py-5">           
+      <div class="container py-5 text-center">
+        <div class="row">
+          <div class="col-lg-7 mx-auto">
+            <p class="h6 text-uppercase text-success">Boletín de noticias</p>
+            <h2 class="mb-3">Manténgase al día con consejos útiles a través de nuestro boletín de noticias</h2>
+            <p class="text-muted mb-5">Servicio de transporte público de pasajeros con tecnología metro, cable aéreo, tranvía y  BRT (Buses de tránsito rápido)</p>
+            <form class="p-2 bg-white rounded shadow-sm">
+              <div class="input-group p-1">
+                <input class="form-control border-0 shadow-0" type="email" placeholder="Introduzca su dirección de correo electrónico">
+                <div class="input-group-append">
+                  <button class="btn btn-success rounded" type="submit">Subscribete</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="py-5">
+      <div class="container pt-5">
+        <div class="row">
+          <div class="col-lg-7 mx-auto text-center">
+            <p class="h6 text-uppercase text-success">Testimonios</p>
+            <h2>Lo que la gente dice de nosotros</h2>
+            <p class="text-muted mb-5">El METRO da la bienvenida al Valle de Aburrá, al ofrecer la posibilidad de integrarse a un medio de transporte ágil, económico y seguro.</p>
+          </div>
+        </div>
+        <div class="row align-items-center">
+          <div class="col-lg-6 mb-5 mb-lg-0">
+            <div class="testimonials-slider owl-carousel owl-theme owl-dots-left">
+              <div class="item">
+                <blockquote class="blockquote border-0 p-0">
+                  <p class="blockquote-text text-muted">Es realmente alucinante vivir esta experiencia en el metro de Medellin, me llamo mucho la atención el modelo de cultura con el que la gente de esta ciudad te tratan, la gente que transita por las estaciones del metro,metro cable y tranvía son extremadamente amables y cordiales con los extranjeros y con sus conciudadanos. Recomiendo que en tu próximo viaje a Colombia pases por Medellín sencillamente te sorprenderá. Medellin es una de las ciudades más innovadoras de latino américa.</p>
+                </blockquote>
+                <footer class="blockquote-footer">
+                  <div class="media align-items-center"><img class="rounded-circle shadow-sm" src="img/client-1.jpg" alt="" width="50">
+                    <div class="media-body ml-3">
+                      <h5 class="text-dark mb-0">Maria-Elisa Cid</h5>
+                      <cite class="text-gray">Cliente metro</cite>
+                    </div>
+                  </div>
+                </footer>
+              </div>
+              <div class="item">
+                <blockquote class="blockquote border-0 p-0">
+                  <p class="blockquote-text text-muted">servicio, rapido, economico y seguro. Es un poco congestionado pero te permite llegar a tiempo a cualquier parte del area metropolitana</p>
+                </blockquote>
+                <footer class="blockquote-footer">
+                  <div class="media align-items-center"><img class="rounded-circle shadow-sm" src="img/client-2.jpg" alt="" width="50">
+                    <div class="media-body ml-3">
+                      <h5 class="text-dark mb-0">Martha Martínez</h5>
+                      <cite class="text-gray">Cliente metro</cite>
+                    </div>
+                  </div>
+                </footer>
+              </div>
+              <div class="item">
+                <blockquote class="blockquote border-0 p-0">
+                  <p class="blockquote-text text-muted">El metro es uno de los principales medios de transporte de la ciudad, no solo el metro, también el sistema cable y la conexión con buses urbanos hacen del sistema uno de los más confiables y seguros que en época de pandemia han implementado los protocolos para garantizar el distanciamiento social y la desinfección de sus equipos.</p>
+                </blockquote>
+                <footer class="blockquote-footer">
+                  <div class="media align-items-center"><img class="rounded-circle shadow-sm" src="img/client-3.jpg" alt="" width="50">
+                    <div class="media-body ml-3">
+                      <h5 class="text-dark mb-0">Amaia Viñas</h5>
+                      <cite class="text-gray">Cliente metro</cite>
+                    </div>
+                  </div>
+                </footer>
+              </div>
+              <div class="item">
+                <blockquote class="blockquote border-0 p-0">
+                  <p class="blockquote-text text-muted">Es uno de los metros más modernos que existe y en perfecto estado. Proporciona transporte a cualquier sitio de la ciudad a bajas tarifas con su sistema integrado de buses, tranvía, metrocable.</p>
+                </blockquote>
+                <footer class="blockquote-footer">
+                  <div class="media align-items-center"><img class="rounded-circle shadow-sm" src="img/client-4.jpg" alt="" width="50">
+                    <div class="media-body ml-3">
+                      <h5 class="text-dark mb-0">Brenda Ribes</h5>
+                      <cite class="text-gray">Cliente metro</cite>
+                    </div>
+                  </div>
+                </footer>
+              </div>
+              <div class="item">
+                <blockquote class="blockquote border-0 p-0">
+                  <p class="blockquote-text text-muted">Limpio, seguro, ordenado, bien señalizado. Viaje sola para un evento de fin de semana y aproveché para hacer turismo en esta hermosa ciudad, y pude conocerla perfectamente con este maravilloso medio de transporte público.</p>
+                </blockquote>
+                <footer class="blockquote-footer">
+                  <div class="media align-items-center"><img class="rounded-circle shadow-sm" src="img/client-5.jpg" alt="" width="50">
+                    <div class="media-body ml-3">
+                      <h5 class="text-dark mb-0">Irene Marin</h5>
+                      <cite class="text-gray">Cliente metro</cite>
+                    </div>
+                  </div>
+                </footer>
+              </div>
+              <div class="item">
+                <blockquote class="blockquote border-0 p-0">
+                  <p class="blockquote-text text-muted">El mejor medio para movilizarte en la ciudad. La cultura hace que sea un gran experencia en todos los aspectos. Es muy limpio y muy fácil para acceder.</p>
+                </blockquote>
+                <footer class="blockquote-footer">
+                  <div class="media align-items-center"><img class="rounded-circle shadow-sm" src="img/client-6.jpg" alt="" width="50">
+                    <div class="media-body ml-3">
+                      <h5 class="text-dark mb-0">Malak de las Heras</h5>
+                      <cite class="text-gray">Cliente metro</cite>
+                    </div>
+                  </div>
+                </footer>
+              </div>
+              <div class="item">
+                <blockquote class="blockquote border-0 p-0">
+                  <p class="blockquote-text text-muted">Pero son sólo dos líneas de metro y la ciudad es amplia. En mi corta experiencia no me tocaron vagones con aire acondicionado, pero quizás los haya. Es un buen servicio y relativamente barato. Una crítica: tuvimos que comprar tarjetas para viajar en Bogotá y en Medellín. Colombia debería tener una única..</p>
+                </blockquote>
+                <footer class="blockquote-footer">
+                  <div class="media align-items-center"><img class="rounded-circle shadow-sm" src="img/client-7.jpg" alt="" width="50">
+                    <div class="media-body ml-3">
+                      <h5 class="text-dark mb-0">Nerea Saldaña</h5>
+                      <cite class="text-gray">Cliente metro</cite>
+                    </div>
+                  </div>
+                </footer>
+              </div>
+              <div class="item">
+                <blockquote class="blockquote border-0 p-0">
+                  <p class="blockquote-text text-muted">Es muy útil al momento de movilizarse por la cuidad y, además tiene precios accesibles y tiene una gran variedad de servicios</p>
+                </blockquote>
+                <footer class="blockquote-footer">
+                  <div class="media align-items-center"><img class="rounded-circle shadow-sm" src="img/client-8.jpg" alt="" width="50">
+                    <div class="media-body ml-3">
+                      <h5 class="text-dark mb-0">Ana-Maria Benitez</h5>
+                      <cite class="text-gray">Cliente metro</cite>
+                    </div>
+                  </div>
+                </footer>
+              </div>
+              <div class="item">
+                <blockquote class="blockquote border-0 p-0">
+                  <p class="blockquote-text text-muted">El metro de Medellin es el orgullo paisa ,buen servicio, buena mobilidad,respecto por el pasajero, buena cantidad de estaciones para tranporte dentro del area metropolitana,limpieza, buena señalizacion, buen precio.</p>
+                </blockquote>
+                <footer class="blockquote-footer">
+                  <div class="media align-items-center"><img class="rounded-circle shadow-sm" src="img/client-9.jpg" alt="" width="50">
+                    <div class="media-body ml-3">
+                      <h5 class="text-dark mb-0">Elisabeth Llanos</h5>
+                      <cite class="text-gray">Cliente metro</cite>
+                    </div>
+                  </div>
+                </footer>
+              </div>
+              <div class="item">
+                <blockquote class="blockquote border-0 p-0">
+                  <p class="blockquote-text text-muted">Transporte ràpido, bien cuidado. Felicito a Medellìn que cuida su metro y que le lleva mas de 25 años de ventaja a Bogotà que no ha sido capaz de hacer un metro a pesar del caos en el transporte, por la ineficacia y corrupciòn de sus gobernantes. Arriba Medellìn.</p>
+                </blockquote>
+                <footer class="blockquote-footer">
+                  <div class="media align-items-center"><img class="rounded-circle shadow-sm" src="img/client-10.jpg" alt="" width="50">
+                    <div class="media-body ml-3">
+                      <h5 class="text-dark mb-0">Maria-Magdalena Vilar</h5>
+                      <cite class="text-gray">Cliente metro</cite>
+                    </div>
+                  </div>
+                </footer>
+              </div>
+              <div class="item">
+                <blockquote class="blockquote border-0 p-0">
+                  <p class="blockquote-text text-muted">Medio de transporte moderno para una ciudad moderna. Muy buen funcionamiento combinado con autobuses,tranvías y metro cables. Lo mejor de Medellín su movilidad</p>
+                </blockquote>
+                <footer class="blockquote-footer">
+                  <div class="media align-items-center"><img class="rounded-circle shadow-sm" src="img/client-11.jpg" alt="" width="50">
+                    <div class="media-body ml-3">
+                      <h5 class="text-dark mb-0">Juana Dieguez</h5>
+                      <cite class="text-gray">Cliente metro</cite>
+                    </div>
+                  </div>
+                </footer>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-5 ml-auto">
+            <div class="row">
+              <div class="col-lg-6 col-6 mb-4">
+                <div class="card shadow">
+                  <div class="card-body text-center">
+                    <svg class="svg-icon text-success mb-3">
+                      <use xlink:href="#user-1"> </use>
+                    </svg>
+                    <h3 class="mb-1">1500000</h3>
+                    <p class="text-muted mb-0">Pasajeros diarios</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 col-6 mb-4">
+                <div class="card shadow">
+                  <div class="card-body text-center">
+                    <svg class="svg-icon text-success mb-3">
+                      <use xlink:href="#destination-map-1"> </use>
+                    </svg>
+                    <h3 class="mb-1">2500000</h3>
+                    <p class="text-muted mb-0">Cleintes en todo el pais</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 col-6">
+                <div class="card shadow">
+                  <div class="card-body text-center">
+                    <svg class="svg-icon text-success mb-3">
+                      <use xlink:href="#quality-1"> </use>
+                    </svg>
+                    <h3 class="mb-1">10</h3>
+                    <p class="text-muted mb-0">Reconocimientos</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 col-6">
+                <div class="card shadow">
+                  <div class="card-body text-center">
+                    <svg class="svg-icon text-success mb-3">
+                      <use xlink:href="#sales-up-1"> </use>
+                    </svg>
+                    <h3 class="mb-1">1457214</h3>
+                    <p class="text-muted mb-0">Clientes Satisfachos</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="map-bg">
+      <div class="container py-5 border-bottom">
+        <div class="row pt-5">
+          <div class="col-lg-3 col-md-6 mb-4 mb-lg-0"><img class="mb-3" src="img/logo.png" alt="" width="80">
+            <p class="text-small mb-0">En Atención al ciudadano exprese sus sugerencias sobre la operación del Sistema.</p>
+            <ul class="list-unstyled text-muted">
+              <li><a class="reset-anchor text-small" href="tel:+574449598">57(4) 4449598</a></li>
+              <li><a class="reset-anchor text-small" href="tel:+574548888">57 (4) 4548888</a></li>
+            </ul>
+            <ul class="list-inline text-muted">
+              <li class="list-inline-item"><a class="reset-anchor" href="https://www.facebook.com/metrodemedellin/" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+              <li class="list-inline-item"><a class="reset-anchor" href="https://twitter.com/metrodemedellin" target="_blank"><i class="fab fa-twitter"></i></a></li>
+              <li class="list-inline-item"><a class="reset-anchor" href="https://www.instagram.com/metrodemedellin/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+              <li class="list-inline-item"><a class="reset-anchor" href="https://www.linkedin.com/company/metrodemedellin/?originalSubdomain=co" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+              <li class="list-inline-item"><a class="reset-anchor" href="https://www.youtube.com/user/metrodemedellin" target="_blank"><i class="fab fa-youtube"></i></a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+            <h4>Sobre nosotros</h4>
+            <ul class="list-unstyled text-muted mb-0">
+              <p class="text-small mb-0">Empresa de Transporte Masivo del Valle de Aburrá Limitada</p>
+              <p class="text-small mb-0">Metro de Medellín Ltda.</p>
+              <p class="text-small mb-0">Fax: 57(4) 4524450</p>
+              <p class="text-small mb-0">Calle 44 46-001, Bello-Antioquia-Colombia-Suramérica.</p>
+              <p class="text-small mb-0">A.A. 9128 Medellín</p>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+            <h4>Canales de recepción</h4>
+            <ul class="list-unstyled text-muted mb-0">
+              <p class="text-small mb-0">Canal recepción PQRSDF</p>
+              <li class="mb-1"><a class="text-small reset-anchor" href="mailto:contactenos@metrodemedellin.gov.co">contactenos@metrodemedellin.gov.co</a></li>
+              <p class="text-small mb-0">Canal notificaciones judiciales</p>
+              <li class="mb-1"><a class="text-small reset-anchor" href="mailto:notificacionesjudiciales@metrodemedellin.gov.co">notificacionesjudiciales@metrodemedellin.gov.co</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="container py-4">           
+        <div class="row text-center">
+          <div class="col-lg-6 p-lg-0 text-lg-left">
+            <p class="text-muted text-small mb-0">© 2021 Metro de medellín, Todos los derechos reservados.</p>
+          </div>
+          <div class="col-lg-6 p-lg-0 text-lg-right">
+            <p class="text-muted text-small mb-0">Template designed by <a class="text-success reset-anchor" href="https://bootstraptemple.com/p/corporate">Bootstrap Temple</a> y modificada por <a class="text-success reset-anchor" href="https://www.linkedin.com/in/juanjosehenao/">Juan José Henao G.</a> </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Scroll top button-->
+    <div class="scroll-top-btn" id="scrollTop"><i class="fas fa-long-arrow-alt-up"></i><span class="font-weight-bold text-uppercase small">Subeme</span></div>
+    <!-- JavaScript files-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="vendor/owl.carousel2/owl.carousel.min.js"></script>
+    <script src="vendor/modal-video/js/modal-video.min.js"></script>
+    <script src="vendor/leaflet/leaflet.js"></script>
+    <script src="js/front.js"></script>
+    <script>
+      // ------------------------------------------------------- //
+      //   Inject SVG Sprite - 
+      //   see more here 
+      //   https://css-tricks.com/ajaxing-svg-sprite/
+      // ------------------------------------------------------ //
+      function injectSvgSprite(path) {
+      
+          var ajax = new XMLHttpRequest();
+          ajax.open("GET", path, true);
+          ajax.send();
+          ajax.onload = function(e) {
+          var div = document.createElement("div");
+          div.className = 'd-none';
+          div.innerHTML = ajax.responseText;
+          document.body.insertBefore(div, document.body.childNodes[0]);
+          }
+      }
+      // this is set to BootstrapTemple website as you cannot 
+      // inject local SVG sprite (using only 'icons/orion-svg-sprite.svg' path)
+      // while using file:// protocol
+      // pls don't forget to change to your domain :)
+      injectSvgSprite('https://bootstraptemple.com/files/icons/orion-svg-sprite.svg'); 
+      
+    </script>
+    <!-- FontAwesome CSS - loading as last, so it doesn't block rendering-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  </body>
+</html>
