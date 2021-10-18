@@ -1,11 +1,52 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Metro de medellín | viaje con nosotros</title>
-    <meta name="description" content="Un diseño exclusivo, limpio, elegante y innovador para para pagina del metro de medellín.">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--SEO PERFORMANCE START-->
+    <meta name="description" content="El Metro de Medellín es el nombre dado al sistema de transporte masivo tipo metro que sirve directamente a la ciudad de Medellín y a sus municipios aledaños.">
+    <!--This meta tag defines the character set and content type of the page.-->
+    <!--I recommend using UTF-8 whenever possible.-->
+    <meta charset="UTF-8">
+
+    <!--It is used to indicate to the search engine the phrases with which you want a page to be found.-->
+    <meta name="keywords" content="metro de medellin, horario metro de medellin, mapa del metro de medellin, estaciones del metro de medellín, metro de medellin hoy, noticias metro de medellín hoy, el metro de medellín, lineas del metro de medellin.">
+
+    <!--Author or Developer of the page-->
+    <!--It serves to let the robots of a search engine know which is the author and owner of a content.-->
+    <meta name="copyright" content="© 2021 Desarrollado Cher France. Todos los derechos reservados"/>
+    <meta name="author" content="Template designed by Bootstrap Temple y modificada por, Juan José Henao Gutiérrez">
+    <link rev="made" href="mailto:contactenos@metrodemedellin.gov.co">
+    <meta name="Reply-to" content="contactenos@metrodemedellin.gov.co">
+
+    <!--This tag tells browsers how to render pages on mobile devices.-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--This guideline allows the search robot to index an HTML page, which is unnecessary if you think that indexing is part of its normal activity, as follows-->
+    <meta name="googlebot" content="index"/> 
+    <!--It must be explicitly indicated if a page should not be included in the index. This tag prohibits the search engine from transferring the contents of an HTML page to its database.-->
+    <meta name="googlebot" content="index, follow">
+
+    <!--This tag is very important for SEO-->
+    <!--It serves to tell search engines which URL you want to appear in the results and thus avoid problems caused by identical or duplicate links.-->
+    <link rel="canonical" href="https://www.metrodemedellin.gov.co/"/>
+
+    <!--Google site verification - Google Search Console EXAMPLE-->
+   <meta name="google-site-verification" content="MgeHfQFzqCK9Y0_Zy-TOybhjp7aKrm2YhPgyC8Tj4WY">
+
+    <!--Cache control-->
+
+    <!--
+        To ensure the smooth operation of the Internet, websites are often stored on intermediate proxy servers or in the browser cache for easy downloading in the future. 
+        intermediate proxy servers or in the browser cache to be easily downloaded in the future. 
+        To prevent this we use the meta tag "cache-control" with the value no-cache:
+    -->
+    <meta http-equiv="cache-control" content="no-cache"/>
+    
+    <!--SEO PERFORMANCE STOP-->
+
     <!-- Bootstrap CSS-->
     <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
     <!-- Owl carousel 2 -->
@@ -25,7 +66,7 @@
     <link rel="shortcut icon" href="img/favicon.png">
   </head>
   <body>
-    <!-- NAVBAR-->
+    <!-- NAVBAR START -->
     <header class="header fixed-top header-animated">
       <nav class="navbar navbar-expand-lg navbar-light py-3">
         <div class="container"><a class="navbar-brand" href="index.html"><img src="img/logo.jpg" alt="..." width="80"></a>
@@ -117,7 +158,9 @@
         </div>
       </nav>
     </header>
-    <!-- GET a QUOTE MODAL -->
+    <!-- NAVBAR STOP -->
+
+    <!-- GET WINDOW MODAL START-->
     <div class="modal fade" id="quoteForm" tabindex="-1" role="dialog" aria-labelledby="quoteForm" aria-hidden="true">
       <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
         <div class="modal-content p-md-3">
@@ -132,13 +175,21 @@
                   <label class="font-weight-bold text-small" for="firstname">Nombre completo<span class="text-success ml-1">&#42;</span></label>
                   <input class="form-control" id="firstname" type="text" placeholder="Ingresa tú nombre completo" required>
                 </div>
+
                 <div class="form-group col-lg-6">
-                  <label class="font-weight-bold text-small" for="lastname">Tipo de documento<span class="text-success ml-1">&#42;</span></label>
-                  <input class="form-control" id="lastname" type="text" placeholder="Ingresa tú tipo de documento" required>
+                    <div class="form-group">
+                      <label class="font-weight-bold text-small" for="InputDocument">Tipo de documento<span class="text-success ml-1">&#42;</span></label>
+                      <select class="form-control" id="InputDocument">
+                        <option selected>Elegir</option>
+                        <option>Tarjeta de Identidad</option>
+                        <option>Cédula de Ciudadania</option>
+                      </select>
+                    </div>
                 </div>
+
                 <div class="form-group col-lg-12">
                   <label class="font-weight-bold text-small" for="email">Documento de identidad<span class="text-success ml-1">&#42;</span></label>
-                  <input class="form-control" id="email" type="email" placeholder="Ingresa tú documento" required>
+                  <input class="form-control" id="email" type="number" placeholder="Ingresa tú documento" required>
                 </div>
                 <div class="form-group col-lg-6">
                   <label class="font-weight-bold text-small" for="phone">Dirección de correo electrónico  <small class="small text-gray">optional</small></label>
@@ -150,7 +201,7 @@
                 </div>
                 <div class="form-group col-lg-6">
                   <label class="font-weight-bold text-small" for="budget">Departamento<span class="text-success ml-1">&#42;</span></label>
-                  <input class="form-control" id="budget" type="text" placeholder="Ingresa tú departamento actual" required><small class="form-text text-muted">Project budget will be on <span class="text-dark">$</span></small>
+                  <input class="form-control" id="budget" type="text" placeholder="Ingresa tú departamento actual" required><small class="form-text text-muted">Tú ciudad actual es <span class="text-dark">Medellín</span></small>
                 </div>
                 <div class="form-group col-lg-6">
                   <label class="font-weight-bold text-small" for="timeframe">Ciudad<span class="text-success ml-1">&#42;</span></label>
@@ -169,7 +220,9 @@
         </div>
       </div>
     </div>
-    <!-- HERO SECTION-->
+    <!-- GET WINDOW MODAL STOP-->
+
+    <!-- HERO SECTION START -->
     <section class="hero hero-home with-pattern d-flex align-items-center py-5">
       <div class="container py-5 mt-5">
         <div class="row align-items-center">
@@ -184,6 +237,9 @@
         </div>
       </div>
     </section>
+    <!-- HERO SECTION STOP -->
+
+    <!--INFORMATION SECTION START-->
     <section class="py-5">
       <div class="container py-5">
         <div class="row">
@@ -207,6 +263,9 @@
         </div>
       </div>
     </section>
+    <!--INFORMATION SECTION STOP-->
+
+    <!-- GENERAL SERVICES START -->
     <section class="pb-5">
       <div class="container pb-5">
         <div class="row">
@@ -240,6 +299,9 @@
         </div>
       </div>
     </section>
+    <!-- GENERAL SERVICES STOP -->
+
+    <!--VALUES STOP-->
     <section class="pb-5">
       <div class="container pb-5">
         <div class="card shadow text-center map-bg">
@@ -280,28 +342,34 @@
         </div>
       </div>
     </section>
+    <!--VALUES STOP-->
+
+    <!--MEMORATIONS STOP-->
     <section class="pb-5">
       <div class="container pb-5">
         <div class="row">
           <div class="col-lg-5 mx-auto mb-5 mb-lg-0 d-flex flex-column">
             <div class="numeric-block order-2 order-lg-1 mb-lg-5">
               <div class="numeric-block-count">1</div>
-              <p class="text-muted text-uppercase mb-2">Reconocimientos</p>
+              <p class="text-muted text-uppercase mb-2">Reconocimiento</p>
               <h3>Calificación AAA en 2019, entregada por Fitch Ratings.</h3>
-              <p class="text-muted py-3">Fitch Ratings-Bogota-19 July 2019: Fitch Ratings asignó la calificación 'AAA(col)' con Observación Negativa a la emisión internacional de bonos por USD1. 000 millones de Empresas Públicas de Medellín E.S:P. (EPM).</p><a class="btn btn-success" href="#">View details</a>
+              <p class="text-muted py-3">Fitch Ratings-Bogota-19 July 2019: Fitch Ratings asignó la calificación 'AAA(col)' con Observación Negativa a la emisión internacional de bonos por USD1. 000 millones de Empresas Públicas de Medellín E.S:P. (EPM).</p><a class="btn btn-success" href="#">Más información</a>
             </div><img class="flex-grow-0 img-fluid shadow rounded order-1 order-lg-2 mb-5 mb-lg-0" src="img/people_3.jpg" alt="">
           </div>
           <div class="col-lg-5 mx-auto d-flex flex-column"><img class="flex-grow-0 img-fluid shadow rounded mb-5" src="img/cultura.jpg" alt="">
             <div class="numeric-block">
               <div class="numeric-block-count">2</div>
-              <p class="text-muted text-uppercase mb-2">Reconocimientos</p>
+              <p class="text-muted text-uppercase mb-2">Reconocimiento</p>
               <h3>Premios TW Co en las categorías mejor servicio al cliente y mejor tweet - diciembre de 2019.</h3>
-              <p class="text-muted py-3">¡Estamos felices! Por segundo año consecutivo el Metro de Medellín logra el primer puesto en los Premios #LatamDigital 2020 en la categoría Mejor Campaña en Twitter, del pilar Social Media. El reconocimiento se obtuvo por la campaña #ChuloAzulPalMetro, con la que logramos la anhelada verificación de nuestra cuenta en esa red social.</p><a class="btn btn-success" href="#">Ver detalles</a>
+              <p class="text-muted py-3">¡Estamos felices! Por segundo año consecutivo el Metro de Medellín logra el primer puesto en los Premios #LatamDigital 2020 en la categoría Mejor Campaña en Twitter, del pilar Social Media. El reconocimiento se obtuvo por la campaña #ChuloAzulPalMetro, con la que logramos la anhelada verificación de nuestra cuenta en esa red social.</p><a class="btn btn-success" href="#">Más información</a>
             </div>
           </div>
         </div>
       </div>
     </section>
+    <!--MEMORATIONS STOP-->
+
+    <!--SERVICES STOP-->
     <section class="py-5 bg-success map-bg text-white">
       <div class="container text-center py-5">
         <div class="row mb-4">
@@ -348,6 +416,9 @@
         </div>
       </div>
     </section>
+    <!--SERVICES STOP-->
+
+    <!--NEWSLETTER START-->
     <section class="bg-light py-5">           
       <div class="container py-5 text-center">
         <div class="row">
@@ -367,6 +438,9 @@
         </div>
       </div>
     </section>
+    <!--NEWSLETTER STOP-->
+
+    <!--TESTIMONIALS START-->
     <section class="py-5">
       <div class="container pt-5">
         <div class="row">
@@ -575,6 +649,9 @@
         </div>
       </div>
     </section>
+    <!--TESTIMONIALS STOP-->
+
+    <!--FOOTER PAGE START-->
     <footer class="map-bg">
       <div class="container py-5 border-bottom">
         <div class="row pt-5">
@@ -624,9 +701,11 @@
         </div>
       </div>
     </footer>
-    <!-- Scroll top button-->
+    <!--FOOTER PAGE STOP-->
+
+    <!-- SCROLL TOP BUTTON-->
     <div class="scroll-top-btn" id="scrollTop"><i class="fas fa-long-arrow-alt-up"></i><span class="font-weight-bold text-uppercase small">Subeme</span></div>
-    <!-- JavaScript files-->
+    <!-- JAVASCRIPT FILES-->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="vendor/owl.carousel2/owl.carousel.min.js"></script>
@@ -636,8 +715,6 @@
     <script>
       // ------------------------------------------------------- //
       //   Inject SVG Sprite - 
-      //   see more here 
-      //   https://css-tricks.com/ajaxing-svg-sprite/
       // ------------------------------------------------------ //
       function injectSvgSprite(path) {
       
