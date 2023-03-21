@@ -1,3 +1,5 @@
+# Rediseño espectacular: Página web moderna para el Metro de Medellín con tecnologías .NET 6 y web modernas
+
 Se ha diseñado una página moderna para la propuesta de cambio de imagen de la página del metro de Medellín, utilizando tecnologías .NET 6 y tecnologías web modernas. La página propuesta tiene un diseño atractivo y funcional que facilita la navegación y el acceso a la información.
 
 La página web está diseñada para ser responsive, lo que significa que se adapta a diferentes dispositivos y tamaños de pantalla, y utiliza tecnologías web modernas como HTML5, CSS3 y JavaScript para mejorar la experiencia del usuario.
