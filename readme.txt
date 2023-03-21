@@ -1,50 +1,7 @@
-################################################################################################
+Se ha diseñado una página moderna para la propuesta de cambio de imagen de la página del metro de Medellín, utilizando tecnologías .NET 6 y tecnologías web modernas. La página propuesta tiene un diseño atractivo y funcional que facilita la navegación y el acceso a la información.
 
-Readme for Iso | Corporate Bootstrap template by Bootstrap Temple 
- - https://bootstraptemple.com
+La página web está diseñada para ser responsive, lo que significa que se adapta a diferentes dispositivos y tamaños de pantalla, y utiliza tecnologías web modernas como HTML5, CSS3 y JavaScript para mejorar la experiencia del usuario.
 
-################################################################################################
+Además, la página web está desarrollada utilizando .NET 6, un framework de desarrollo de software para crear aplicaciones web modernas y escalables. .NET 6 proporciona una arquitectura flexible y modular, lo que permite el desarrollo de aplicaciones web de alta calidad.
 
-Hi,
-
-thank you for downloading. Have fun and tell your friends about us ;)
-
-Ondrej, Bootstrap Temple
-
----------------------
- CSS
----------------------
-
-The theme stylesheet is css/style.default.css. If you want to make any changes,
-you can do it here or better to override it in custom.css so you can update the original theme stylesheet if an updated is released.
-Changing to another colour variant, is just a matter of replacing css/style.default.css with css/style.pink.css in index.html.
-
----------------------
- JavaScript
----------------------
-
-Apart from the Bootstrap JS components, the majority of JS is located in /js/front.js.
-
----------------------
- CREDITS
----------------------
-
-- Botstrap - http://getbootstrap.com
-- Font Awesome - http://fontawesome.io/
-- more in credits.txt.
-
----------------------
- LICENSE CONDITIONS
----------------------
-
-You are completely free to use this template for your personal use or as a work for your client as long as you keep the link at the template footer pointing to our partner and us.
-
-If you would prefer removing the backlink from the theme footer, please purchase the attribution-free license at the theme page at https://bootstraptemple.com.
-
-However, you cannot redistribute the template nor its derivatives on the internet - neither for free or commercially (e.g., selling it on a marketplace).
-
-Also, as a bonus for license owners, I can provide you the SASS files for even easier template customization. Drop me a line at hello@bootstraptemple.com after purchasing the license.
-
-Thank you for understanding and respecting the license conditions.
-
-If more info needed, please contact me at hello@bootstraptemple.com.
+La página web propuesta para el cambio de imagen de la página del metro de Medellín también cuenta con características avanzadas como búsqueda inteligente, integración con redes sociales y análisis de datos en tiempo real. Además, la página está diseñada para ser fácilmente actualizable y escalable, lo que permite su crecimiento y adaptación a medida que cambian las necesidades del negocio.
